@@ -1,0 +1,148 @@
+﻿--------------------TABLICE DWUWYMIAROWE--------------------
+
+***ZADANIE 1***
+
+//Kacper Kropacz 2P
+
+#include<iostream>
+
+
+
+using namespace std;
+
+
+
+int main()
+
+{
+	
+      int tab[2][2];
+	
+      int x, y;
+	
+      for (x = 0; x < 2; x++)
+	
+{
+		
+      for (y = 0; y < 2; y++)
+		
+{
+			
+      cin >> tab[x][y];
+		
+}
+	
+}
+
+
+
+	
+      for (x = 0; x < 2; x++)
+	
+{
+		
+      for (y = 0; y < 2; y++)
+		
+{
+			
+cout << tab[x][y]<< "  ";
+		
+} 
+		
+cout << endl;
+	
+}
+
+
+
+}
+
+***ZADANIE 2***
+
+//Kacper Kropacz 2P
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+      int tab[2][2];
+      int x, y;
+      for (x = 0; x < 2; x++)
+{
+      for (y = 0; y < 2; y++)
+{
+      cin >> tab[x][y];
+}
+}
+      for (x = 0; x < 2; x++)
+{
+      for (y = 0; y < 2; y++)
+{
+      cout << tab[x][y] << "  ";
+}
+      cout << endl;
+}
+
+      int macierz = tab[0][0] * tab[1][1] - (tab[1][0] * tab[0][1]);
+      cout << "Wyznacznik macierzy wynosi: " << macierz << endl;
+}
+
+***ZADANIE 3***
+
+//Kacper Kropacz 2P
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+      int tab[10][10];
+
+      for (int x = 0; x < 10; x++)
+{
+      for (int y = 0; y < 10; y++)
+{
+      if (x == y)
+{
+      tab[x][y] = 1;
+}
+      else
+{
+      tab[x][y] = 0;
+}
+      cout << tab[x][y] << " ";
+}
+      cout << endl;
+}
+}
+
+***ZADANIE 4***
+
+//Kacper Kropacz
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+      int tab[10][10];
+
+      for (int x = 0; x < 10; x++)
+{
+      for (int y = 0; y < 10; y++)
+{
+      if (x == y)
+{
+      tab[x][y] = x;
+}
+      else
+{
+      tab[x][y] = 0;
+}
+      cout << tab[x][y] << " ";
+}
+      cout << endl;
+}
+}
+

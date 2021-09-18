@@ -1,0 +1,116 @@
+﻿***ZADANIE 1***
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i;
+    int suma = 0;
+    int tab[10]{ 972, 1018 , 1109, 1331 , 1410, 1514, 1580, 1605, 1610,  1627};
+    for (i=0; i <= 9; i++)
+    {
+        cout << tab[i] << endl;
+        suma = suma + tab[i];
+    }
+    cout << suma << endl;
+}
+
+***ZADANIE 2***
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x;
+    int y; 
+
+
+    
+    string imie[10] = { "Andrzej", "Bartosz", "Cezary", "Daniel", "Edmund", "Franciszek", "Grzegorz", "Henryk", "Jacek", "Kacper" };
+    string nazwisko[10] = { "Lizakowski", "Łukasiewicz", "Makowski", "Nowak", "Olkowski", "Polak", "Rybak", "Sienkiewicz", "Śliwiak", "Tuszyński"};
+    srand(time(NULL));
+   
+    x = rand() % 10;
+    y = rand() % 10;
+
+    cout << imie[x]<<" "<< nazwisko[y];
+
+}
+***ZADANIE 3***
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int tab[20] = { 16, 24, 38, 49, 52, 67, 70, 89, 95, 8, 19, 27, 30, 41, 56, 66, 71, 88, 93, 1 };
+
+
+	for (int i = 0; i < 20; i++) {
+
+		cout << tab[i] << endl;
+
+	}
+
+}
+
+***ZADANIE 4***
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int tab[10];
+	int x = 0;
+	srand(time(NULL));
+
+
+	for (int i = 0; i < 10; i++) {
+
+		tab[i] = rand() % 100;
+		cout << tab[i] << endl;
+
+		if (tab[i] > x)
+			x = tab[i];
+	}
+
+	cout << endl;
+	cout << endl;
+	cout << endl;
+	cout << x << endl;
+	
+}
+***ZADANIE 5***
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int tab[12] = { 4, 5, 20, 125, 89, 65, 77, 2, 1, 0, 123, 47 };
+
+    int a, b;
+
+    for (a = 0; a <= 10; a++) {
+        for (b = a + 1; b <= 11; b++)
+        {
+            int numb;
+
+            if (tab[a] > tab[b])
+            {
+                numb = tab[a];
+                tab[a] = tab[b];
+                tab[b] = numb;
+            }
+        }
+    }
+
+    for (a = 0; a <= 11; a++) {
+        cout << endl << tab[a] << endl;
+    }
+}
+
+KACPER KROPACZ 2P
+
+
+
+
+
