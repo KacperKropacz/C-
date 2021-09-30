@@ -1,0 +1,53 @@
+--------------------ZADANIE 1--------------------
+
+#include <iostream>
+
+using namespace std;
+
+int dodawanie(int x, int y) {
+	return x + y; 
+}
+int odejmowanie(int w, int z) {
+	return w - z;
+}
+int mnozenie(int a, int b) {
+	return a * b;
+}
+double dzielenie(int c, int d) {
+	return c / d;
+}
+
+int main()
+{
+	cout << dodawanie(4, 4) << endl;
+	cout << odejmowanie(4, 2) << endl;
+	cout << mnozenie(2, 3) << endl;
+	cout << dzielenie(6, 3) << endl;
+}
+
+--------------------ZADANIE 2--------------------
+#include <iostream>
+
+using namespace std;
+
+int prostokat(int x, int y) {
+	return x * y;
+}
+int trojkat(int w, int z) {
+	return (w * z) / 2;
+}
+int trapez(int a, int b, int h) {
+	return ((a + b) * h) / 2;
+}
+
+
+int main()
+{
+	cout << prostokat(4, 4) << endl;
+	cout << trojkat(4, 2) << endl;
+	cout << trapez(2, 3, 4) << endl;
+}
+
+--------------------ZADANIE 3--------------------
+                                                 
+--------------------ZADANIE 4--------------------
